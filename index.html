@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Random Quote Machine</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="public/css/bootstrap.min.css">
+  <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="public/css/main.css">
+</head>
+<body>
+  <div class="container">
+    <header class="banner">
+      <h1 class="text-center">Random Quote Machine</h1>       
+    </header>
+    <main>
+      <section class="quote-box" >
+        <div class="quote-text text-center">
+          <i class="fa fa-quote-left"></i><span id="text"></span>
+        </div>
+        <p class="quote-author text-right"></p>   
+        <div class="buttons">
+          <a href="https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=" target="_blank" class="button" id="twitter" data-toggle="tooltip" title="Tweet this quote"><i class="fa fa-twitter"></i></a>
+          <a class="button" id="facebook" data-toggle="tooltip" title="Post this quote on facebook"><i class="fa fa-facebook"></i></a>
+          <button class="button" id="new-quote" data-toggle="tooltip" title="Get new quote">New quote</button>
+        </div>
+      </section>
+    </main> 
+    <footer class="text-center">
+      <p>By <a href="http://about.me/Dikaeinstein">Dikaeinstein</a></p>
+    </footer>
+  </div>
+  <script src="public/js/jquery-3.2.1.min.js"></script> 
+  <script src="public/js/jquery-ui.min.js"></script>
+  <script src="public/js/quotes.js"></script>
+</body>
