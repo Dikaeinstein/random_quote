@@ -48,111 +48,133 @@ table {
 	border-spacing: 0;
 }
 
-/* main styles */
+/*************************************
+******** main styles *****************
+**************************************/
+
 body {
-    background-color: #333;
-    color: #fff;
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
+  background-color: #333;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  transition: background-color 1s;
 }
-header,
-footer {
-    color: #fff;
-}
-footer {
-  width: 450px;
-  text-align: center;
-  display: block;
-  margin: 15px auto 30px auto;
-  font-size: 0.8em;
-}
-footer a,
-footer a:hover {
-  font-weight: 500;
-  text-decoration: none;
+header {
   color: #fff;
 }
 
 /* Typography */
 h1 {
-    font-size: 48px;
+  font-size: 3rem; /* 48px */
+}
+
+/* Grid */
+.container {
+  padding-left: 0.9375rem; /* 15px */
+  padding-right: 0.9375rem; /* 15px */;
 }
 
 /* Banner */
 .banner {
-    width: 100%;
-    height: 80px;
-    background: #fff;
-    padding: 15px 0 15px 0;
-    font-weight: 600;
+  width: 100%;
+  height: 5rem; /* 80px */
+  background: #fff;
+  padding: 0.9375rem 0; /* 15px 0 15px 0 */
+  font-weight: 600;
+  text-align: center;
+  border-bottom-left-radius: 0.3125rem; /* 5px */
+  border-bottom-right-radius: 0.3125rem; /* 5px */
+  transition: color 1s;
 }
 
 /* Quote Styles */
 .quote-box {
-    position: relative;
-    border-radius: 3px;
-    background-color: #fff;
-    margin: 8% auto auto auto;
-    padding: 40px 50px;
-    width: 450px;
-    height: 75px;
-    display: table;
+  position: relative;
+  border-radius: 0.1875rem; /* 3px */
+  background-color: #fff;
+  margin: 1.875rem auto auto auto; /* 30px */
+  padding: 2.5rem 2.5rem; /* 40px 40px */
+  max-width: 28.125rem; /* 450px */
+  height: 10.9375rem; /* 175px */
 }
 .quote-text {
-    font-size: 1.75em;
-    font-weight: 600;
-    width: 450px;
-    height: 75px;
-}
-.quote-text i {
-    font-size: 1em;
-    margin-right: 0.4em;
+  font-size: 1.75rem; /* 28px */
+  font-weight: 600;
+  width: 100%;
+  height: 4.6875rem; /* 75px */
+  text-align: center;
 }
 .quote-author {
-    font-size: 1.15em;
-    padding-top: 20px;
-    width: 450px;
+  font-size: 1.15em;
+  font-weight: 600;
+  padding-top: 2.5rem; /* 40px */
+  width: 100%;
+  text-align: right;
+  transition: color 1s, visibility 1s;
+}
+#quote-icon {
+  margin-right: 0.4rem;
+  transition: color 1s;
+}
+#text {
+  transition: color 1s, visibility 1s;
 }
 #new-quote {
-    position: absolute;
-    right: 50px;
+  position: absolute;
+  right: 2.5rem; /* 50px */
+}
+#Add-quote {
+  position: absolute;
+  left: 2.5rem; /* 50px */
+}
+
+/* input textbox */
+.quote-form-section {
+  margin: 1.875rem auto; /* 30px */
+  max-width: 28.125rem; /* 450px */
+}
+
+#quote {
+  border-radius: 0.1875rem; /* 3px */
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem; /* 16px */
+  width: 93.5%;
+  height: 100px;
+  padding: 0.9375rem; /* 15px */
+  margin-bottom: 0.9375rem; /* 15px */
+}
+#author {
+  border-radius: 0.1875rem; /* 3px */
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  width: 97%;
+  height: 0.875rem; /* 30px */
+  padding: 0.3125rem; /* 5px */
+  font-size: 1rem; /* 16px */
+}
+#save-quote {
+  margin: 0.9375rem auto; /* 15px */
+  background: #fff;
 }
 
 /* Buttons */
-.buttons {
-    width: 450px;
-    margin: auto;
-    display: block;
-}
 .button {
-    height: 38px;
-    border: none;
-    border-radius: 3px;
-    outline: none;
-    font-size: 0.85em;
-    padding: 8px 18px 6px 18px;
-    margin-top: 30px;
-    opacity: 1;
-    cursor: pointer;
-    background-color: #333;
-    color: #fff;
+  height: 2.375rem; /* 38px */
+  border: none;
+  border-radius: 0.1875rem; /* 3px */
+  outline: none;
+  font-size: 0.85em;
+  font-weight: 600;
+  padding: 0.5rem 1.125rem 0.375rem 1.125rem; /* 8px 18px 6px 18px */
+  margin-top: 0.875rem; /* 30px */
+  opacity: 1;
+  cursor: pointer;
+  background-color: #333;
+  color: #fff;
+  transition: background-color 1s;
 }
 .button:hover {
-    opacity: 0.9;
-}
-#twitter,
-#facebook {
-    float: left;
-    margin-right: 5px;
-    text-align: center;
-    padding: 0;
-    padding-top: 8px;
-    font-size: 1.2em;
-    width: 40px;
-    height: 38px;
-}
-#twitter:hover,
-#facebook:hover {
-    color: #fff;
+  opacity: 0.9;
 }
